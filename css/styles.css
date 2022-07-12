@@ -1,0 +1,150 @@
+
+@font-face {
+   font-family: "Montserrat";
+   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+   font-family: "Fraunces";
+   src: url(../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+:root{
+    
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+     --white: hsl(0, 0%, 100%);
+}
+
+p,
+ h1,
+ span,
+ img{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+   background-color:var(--cream);
+   padding:26px 16px;
+   font-size: 14px;
+   font-family: "Montserrat";
+   font-weight: 500;
+   color:var(--very-dark-blue)
+}
+ 
+ .main-img{
+    display:block;
+    max-width:100%;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+ }
+ .desktop-img{
+    display: none;
+ }
+ .card-content{
+    background-color: white;
+   
+    border-radius: 0 0 5px;
+ }
+ .card-content-inner{
+   padding: 28px 22px;
+ }
+ .pre-tittle{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 18px;
+ }
+ .tittle{
+    font-family: "Fraunces";
+    margin-bottom: 26px;
+ }
+ 
+ .description{
+   font-size: 12px;
+   line-height: 20px;
+   margin-bottom:56px;
+   color: var(--dark-grayish-blue);
+ }
+ .card-price{
+   margin-bottom: 24px;
+ }
+ 
+ .new-price{
+   font-size: 28px;
+   font-family: "Fraunces";
+   color:var(--dark-cyan);
+   display:inline-block;
+   margin-right: 24px;
+   margin-bottom: 15px;
+ }
+ .original-price{
+   position: relative;
+   color: var(--dark-grayish-blue);
+   top: -3px;
+   text-decoration: line-through;
+ }
+ .btn{
+    background-color:var(--dark-cyan);
+    height:40px;
+    width:85%;
+    padding: 6px 18px;
+    border-radius: 5px;
+    color:White;
+    font-family: "Montserrat";
+    border:transparent;
+    cursor: pointer;
+    
+  }
+  .btn img{
+   display:inline-block;
+   margin-right: 14px;
+   position: relative;
+   top: -2px;
+  }
+  .btn:hover{
+      background-color:var(--very-dark-blue);
+  }
+  @media screen and (min-width:603px) {
+    
+   html{
+      display:grid;
+      place-items: center;
+      height:100%;
+   }
+   
+   body{
+      padding: 0;
+      margin: 0;
+    }
+    .card{
+      max-width: 602px;
+      display:flex;
+      flex-direction: row;
+      
+    }
+    .mobile-img{
+      display: none;
+    }
+    .desktop-img{
+      display:block;
+      height:100%;
+    }
+    .main-img{
+      border-radius: 5px 0 0 5px;
+    }
+    .card-img-wrapper,
+    .card-content{
+      width:50%;
+    }
+    .card-content-inner{
+      padding: 32px;
+      
+    }
+    .description{
+      font-size: 13px;
+      margin-bottom: 38px;
+    }
+
+  }
